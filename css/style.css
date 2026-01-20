@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: small;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: small;
+
+}
+
+
+header {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home,
+#about,
+#contact {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 95%;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: lighter;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+
+nav ul li:first-child a:hover {
+    font-weight: bolder;
+}
+
+nav ul li:last-child a:hover {
+    font-weight: 400;
+
+}
+
+nav ul li:last-child a {
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    border-color: rgba(53, 95, 158, 0.836);
+}
+
+input[type="email"] {
+    background-color: rgba(249, 249, 249, 0.836);
+}
+
+.btn-send {
+    background-color: rgba(53, 95, 158, 0.26);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-send:hover {
+    background-color: rgba(53, 95, 158, 0.836);
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+}
