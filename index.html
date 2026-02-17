@@ -1,68 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site that talks about AI">
-    <meta name="author" content="Miguel Butrón">
-    <meta name="keywords" content="AI, IA, inteligenica artificial, artificial inteligence">
-    <!-- <link rel="icon" href="/assets/icons/favicon.ico"> AUN NO TENGO EL FAVICON-->
+    <title>The Core Studio | Pilates, Barre & Ballet</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>AI4Everyone</title>
 </head>
-
 <body>
+
     <header>
-        <h1>AI4Everyone</h1>
+        <div class="logo">
+            <h1>The Core Studio</h1>
+        </div>
         <nav>
             <ul>
-
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="home">
-            <div>
-                <h2>AI belongs to all of us</h2>
-                <div>
-                    <p>Innovation belongs to all of us. We bridge the gap between
-                        complex algorithms and everyday solutions, ensuring that the benefits of AI
-                        are felt by everyone, everywhere. <span>No barriers.
-                            No gatekeeping. Just limitless potential for every human on the planet.</span></p>
-                    <img src="assets/images/AI_4_everyone.png" alt="A group of people talking about AI">
-                </div>
+        <section id="inicio" class="hero">
+            <article>
+                <h2>Tu centro, tu fuerza</h2>
+                <p>Bienvenido a un espacio diseñado para el movimiento consciente y la elegancia.</p>
+            </article>
+        </section>
+
+        <section id="servicios" class="services">
+            <h2>Nuestras Clases</h2>
+            <div class="services-container">
+                <article class="service-card">
+                    <h3>Pilates Reformer</h3>
+                    <p>Enfoque en la alineación, el control y el fortalecimiento del core.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Barre Fit</h3>
+                    <p>Entrenamiento dinámico que combina elementos de danza y fitness.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Ballet Adultos</h3>
+                    <p>Mejora tu flexibilidad y postura con la gracia de la danza clásica.</p>
+                </article>
             </div>
         </section>
-        <section id="gallery-container">
+
+        <section id="galeria" class="gallery">
+            <h2>El Estudio</h2>
             <div class="grid-container">
-                <article class="grid-item item-1"><a href="#">Item 1</a></article>
-                <article class="grid-item item-2"><a href="#">Item 2</a></article>
-                <article class="grid-item item-3"><a href="#">Item 3</a></article>
-                <article class="grid-item item-4"><a href="#">Item 4</a></article>
-                <article class="grid-item item-5"><a href="#">Item 5</a></article>
+                <figure>
+                    <img src="assets/images/pilates.jpg" alt="Clase de Pilates Reformer">
+                </figure>
+                <figure>
+                    <img src="assets/images/barre.jpg" alt="Detalle en la barra de Barre">
+                </figure>
+                <figure>
+                    <img src="assets/images/ballet.jpg" alt="Bailarina de ballet estirando">
+                </figure>
+                <figure>
+                    <img src="assets/images/estudio.jpg" alt="Interior lujoso del estudio">
+                </figure>
             </div>
         </section>
 
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <p>Escríbenos para agendar tu clase de prueba.</p>
+            <form action="#">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="tu@correo.com" required>
+                <button type="submit">Enviar Información</button>
+            </form>
+        </section>
     </main>
-    <footer>
-        <section id="contact">
-            <div>
-                <h3>Contact us</h3>
-            </div>
-            <div>
-                <h4>Please fill the box below to be in touch</h4>
-                <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="write your name here" required>
-                    <input type="email" name="email" placeholder="Wite your email here" required>
-                    <textarea name="message" placeholder="Write your message here" rows="3"></textarea>
-                    <button type="submit" class="btn-send">Send</button>
-                </form>
-            </div>
-        </section>
-    </footer>
-</body>
 
+    <footer>
+        <p>&copy; 2026 The Core Studio. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+</body>
 </html>
